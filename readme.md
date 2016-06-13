@@ -16,7 +16,6 @@
 ## For the users
 
 - [dat](https://github.com/maxogden/dat) - Main CLI and [project planning](https://github.com/maxogden/dat/issues).
-- [dat-menubar](https://github.com/karissa/dat-menubar) - A cross-platform menubar application for dat.
 - [dat-desktop](https://github.com/juliangruber/dat-desktop) - Dat Desktop App.
 
 ## Protocol & Network
