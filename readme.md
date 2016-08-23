@@ -20,7 +20,7 @@
 
 ## Protocol & Network
 
-- [specification](https://github.com/datproject/docs/blob/master/hyperdrive.md) - Hyperdrive + Hypercore Specification.
+- [specification](https://github.com/datproject/docs/blob/master/docs/hyperdrive_spec.md) - Hyperdrive + Hypercore Specification.
 - 📔[hypercore](https://github.com/mafintosh/hypercore) - Protocol and network for distributing and replicating feeds of binary data.
 - [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - Stream that implements the hypercore protocol.
 - 📔[hyperdrive](https://github.com/mafintosh/hyperdrive) - A file sharing network based on rabin file chunking and append only feeds of data verified by merkle trees.
