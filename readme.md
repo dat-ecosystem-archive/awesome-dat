@@ -30,7 +30,7 @@
 ## Infrastructure
 
 - [website](https://github.com/datproject/website) - The web site.
-- [dat.land](https://github.com/datland) - Data registry that is being built.
+- [dat.land](https://github.com/datproject/dat.land) - Data registry that is being built.
 
 ## Built with dat
 
