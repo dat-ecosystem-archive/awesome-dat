@@ -17,6 +17,19 @@
 
 - 📔[dat](https://github.com/maxogden/dat) - Main CLI and [project planning](https://github.com/maxogden/dat/issues).
 - [dat-desktop](https://github.com/juliangruber/dat-desktop) - Dat Desktop App.
+- [Beaker Browser](https://beakerbrowser.com/) - A Web Browser that surfs Dats.
+
+## Modules
+
+ - [hyperdrive-import-files](https://www.npmjs.com/package/hyperdrive-import-files) - Import some files and folders into a Hyperdrive.
+ - [hyperdrive-http](https://www.npmjs.com/package/hyperdrive-http) - Handle Hyperdrive HTTP Requests.
+ - [hyperdrive-stats](https://www.npmjs.com/package/hyperdrive-stats) - Live & persistent stats module for hyperdrive.
+ - [hyperdrive-network-speed](https://www.npmjs.com/package/hyperdrive-network-speed) - Track hyperdrive archive upload and download speeds.
+ - [zip-to-hyperdrive](https://www.npmjs.com/package/zip-to-hyperdrive) - Add files from a zip archive to a hyperdrive archive.
+ - [hyperdrive-to-zip-stream](https://www.npmjs.com/package/hyperdrive-to-zip-stream) - Create a zipfile from a hyperdrive.
+ - [github-to-hypercore](https://www.npmjs.com/package/github-to-hypercore) - Stream a github event feed into a hypercore.
+ - [multidrive](https://www.npmjs.com/package/multidrive) - Manage multiple hyperdrive instances.
+ - [hyperdrive-duplicate](https://www.npmjs.com/package/hyperdrive-duplicate) - Check if a file is the same as an entry in hyperdrive.
 
 ## Protocol & Network
 
@@ -35,6 +48,8 @@
 ## Built with dat
 
 - [jawn](https://github.com/CfABrigadePhiladelphia/jawn) - Git for Tabular Data.
+- [hyperfeed](https://github.com/poga/hyperfeed) - A self-archiving P2P live feed. You can convert any RSS/ATOM/RDF feed to a P2P live update publishing network.
+- [hyperpipe](https://www.npmjs.com/package/hyperpipe) - Distributed input/output pipe.
 
 ## License
 
