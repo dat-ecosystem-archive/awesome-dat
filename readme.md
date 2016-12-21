@@ -14,8 +14,8 @@
 
 ## For the users
 
-- 📔[dat cli](https://github.com/maxogden/dat) - Command line interface
-- [dat desktop](https://github.com/juliangruber/dat-desktop) - Desktop App for managing Dats.
+- 📔[dat cli](https://github.com/datproject/dat) - Command line interface
+- [dat desktop](https://github.com/datproject/dat-desktop) - Desktop App for managing Dats.
 - [Beaker Browser](https://beakerbrowser.com/) - A Web Browser that surfs Dats.
 - [dat.land](https://github.com/datproject/datfolder) - Dat dataset registry.
 
