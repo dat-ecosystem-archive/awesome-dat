@@ -25,3 +25,8 @@ Thank you for your suggestion!
 ### Updating your PR
 
 A lot of times, making a PR adhere to the standards above can be difficult. If the maintainers notice anything that we'd like changed, we'll ask you to edit your PR before we merge it. If you're not sure how to do that, [here is a guide](https://github.com/RichardLitt/docs/blob/master/amending-a-commit-guide.md) on the different ways you can update your PR so that we can merge it.
+
+
+## License
+
+Contributions to this repository are [placed into the public domain](https://github.com/datproject/awesome-dat#license).
