@@ -139,6 +139,8 @@ There are lots of modules that help you use, manage, and track Dat archives or h
 - [hyperfeed](https://github.com/poga/hyperfeed) - A self-archiving P2P live feed. You can convert any RSS/ATOM/RDF feed to a P2P live update publishing network.
 - [git-dat](https://github.com/substack/git-dat) - git plugin to use dat:// remotes
 - [hyperpipe](https://github.com/mafintosh/hyperpipe) - Distributed input/output pipe.
+- [hypershare](https://github.com/gerhardberger/hypershare) - Easily share files with hyperdrive from code or command line.
+- [hypershare-desktop](https://github.com/gerhardberger/hypershare-desktop) - A filesharing desktop app built with hypershare.
 
 
 ## License
