@@ -19,17 +19,18 @@
 
 ## Ecosystem
 
-The dat ecosystem consists of many modules provided by the dat project and by the community. The dat project modules are marked:
-- :small_orange_diamond: = core modules which the dat technology is built on
-- :small_blue_diamond: = additional modules to be used in dat-based decentralized apps
-- :small_red_triangle: = important external modules the dat technology is built on
+The dat ecosystem consists of many modules provided by the dat project and by the community. The dat project modules are marked:<br>
+&nbsp;&nbsp;:small_orange_diamond: = core modules which the dat technology is built on<br>
+&nbsp;&nbsp;:small_blue_diamond: = additional modules to be used in dat-based decentralized apps<br>
+&nbsp;&nbsp;:small_red_triangle: = important external modules the dat technology is built on
 
 ### Top-level
 
-- :small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework
-- :small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework
-- :small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats
-- :small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats
+:small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework
+:small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework
+:small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats
+:small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats
+- [test](test.html) Test
 
 Hypercore and hyperdrive are core components for dat wire protocol, file-management, -verification and -sharing
 
