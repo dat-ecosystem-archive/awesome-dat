@@ -26,10 +26,10 @@ The dat ecosystem consists of many modules provided by the dat project and by th
 
 ### Top-level
 
-:small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework
-:small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework
-:small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats
-:small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats
+&nbsp;&nbsp;:small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats<br>
 - [test](test.html) Test
 
 Hypercore and hyperdrive are core components for dat wire protocol, file-management, -verification and -sharing
