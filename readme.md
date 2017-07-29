@@ -19,11 +19,19 @@
 
 ## Ecosystem
 
-The dat ecosystem consists of many modules provided by dat project and the community:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;:small_orange_diamond: = core modules which the dat technology is built on<br>
-&nbsp;&nbsp;&nbsp;&nbsp;:small_blue_diamond: = additional modules provided by the dat project<br>
-&nbsp;&nbsp;&nbsp;&nbsp;:small_red_triangle: = important external modules the dat technology is built on
-&nbsp;&nbsp;&nbsp;&nbsp;:black_small_square: = community-contributed ecosystem modules
+The dat ecosystem consists of many modules provided by dat project and the community.
+
+- [Top-level](#top-level)
+- [Streams](#streams)
+- [Networking](#networking)
+- [File access](#file-access)
+- [Command-line](#command-line)
+
+> Modules are labeled as folows:<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:small_orange_diamond: core modules which the dat technology is built on<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:small_blue_diamond: additional modules provided by the dat project<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:small_red_triangle: important external modules the dat technology is built on<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:black_small_square: community-contributed ecosystem modules<br>
 
 ### Top-level
 
@@ -52,12 +60,12 @@ Hypercore and hyperdrive are core components for dat wire protocol, file managem
 &nbsp;&nbsp;:small_red_triangle: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and multicast-dns<br>
 &nbsp;&nbsp;:small_red_triangle: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete js implementation of DHT peer discovery protocol<br>
 
-### File Access
+### File access
 
 &nbsp;&nbsp;:small_orange_diamond: [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - base class for random access stores<br>
 &nbsp;&nbsp;:small_blue_diamond: [random-access-file](https://github.com/mafintosh/random-access-file) - continuous reading / writing to files using random offset and lengths<br>
 &nbsp;&nbsp;:small_blue_diamond: [random-access-memory](https://github.com/mafintosh/random-access-memory) - same as `random-access-file` but maintains data in memory<br>
-&nbsp;&nbsp;:small_blue_diamond: [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - abstract-random-access backend writing to fixed size page files, useful for sparse data<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - backend writing to fixed size page files, useful for sparse data<br>
 
 ### Command-line
 
