@@ -1,10 +1,8 @@
-# Awesome dat [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Dat awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 [<img src="http://datproject.github.io/design/downloads/dat-data-logo.png" align="right" width="140">](https://datproject.org)
 
-> A curated list of the dat ecosystem.
-
-*Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.*
+> A curated list of the [Dat Project](https://datproject.org) ecosystem.
 
 *Please read the [contribution guidelines](contributing.md) before contributing.*
 
@@ -12,56 +10,58 @@
 [![datproject/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/datproject/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-## For the users
+## Technology
 
-- 📔[dat cli](https://github.com/datproject/dat) - Command line interface
-- [dat desktop](https://github.com/datproject/dat-desktop) - Desktop App for managing Dats.
-- [Beaker Browser](https://beakerbrowser.com/) - A Web Browser that surfs Dats.
-- [dat.land](https://github.com/datproject/datfolder) - Dat dataset registry.
+- [dat whitepaper](https://datproject.org/paper) - whitepaper 'dat - distributed dataset synchronization And versioning' (pdf)
+- [how dat works](https://github.com/datproject/docs/blob/master/docs/how-dat-works.md) - high-level tecnical explanation of how dat works
+- [how hypercore works](https://github.com/datproject/docs/blob/master/docs/hyperdrive_spec.md) - in-depth technical explanation of hypercore and hyperdrive
+- [dat.json](https://github.com/juliangruber/dat.json) - specification for the dat.json meta format
 
-## Organization & Specs
+## Ecosystem
 
-- [Dat website](https://github.com/datproject/website) - The Dat project web site, datproject.org.
-- [Dat Design](https://github.com/datproject/design) - Design resources for the Dat Project.
-- [Dat Docs](https://github.com/datproject/docs) - Documentation website for Dat, docs.datproject.org.
-- [dat.json](https://github.com/juliangruber/dat.json) - The WIP specification for the dat.json meta format
-- [Dat Project Projects](https://github.com/datproject/projects) - Projects the Dat team is working on.
-- [General discussion](https://github.com/datproject/discussions/issues)
+The dat ecosystem consists of many modules provided by the dat project and by the community. The dat project modules are marked:
+- :small_orange_diamond: = core modules which the dat technology is built on
+- :small_blue_diamond: = additional modules to be used in dat-based decentralized apps
+- :small_red_triangle: = important external modules the dat technology is built on
 
+### Top-level
 
-## Modules Dat is Built On
+- :small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework
+- :small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework
+- :small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats
+- :small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats
 
-### Hypercore & Hyperdrive
+Hypercore and hyperdrive are core components for dat wire protocol, file-management, -verification and -sharing
 
-Hypercore and hyperdrive are the core components for Dat's file management, verification, and sharing.
+- :small_orange_diamond: [hyperdrive](https://github.com/mafintosh/hyperdrive) - secure, decentralized peer-to-peer file system on top of hypercore
+- :small_orange_diamond: [hypercore](https://github.com/mafintosh/hypercore) - decentralized peer-to-peer append-only logs on top of hypercore protocol
+- :small_orange_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol
 
-- 📔[hyperdrive](https://github.com/mafintosh/hyperdrive) - A file sharing network based on rabin file chunking and append only feeds of data verified by merkle trees.
-- 📔[hypercore](https://github.com/mafintosh/hypercore) - Protocol and network for distributing and replicating feeds of binary data.
-- [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - Stream that implements the hypercore protocol.
-- [rabin](https://github.com/datproject/rabin) - Rabin fingerprinter stream
-- [merkle-tree-stream](https://github.com/mafintosh/merkle-tree-stream) - Used to construct Merkle trees from chunks
+### Streams
+
+- :small_orange_diamond: [merkle-tree-stream](https://github.com/mafintosh/merkle-tree-stream) - construct merkle trees from chunks of incoming data
+- :small_blue_diamond: [rabin](https://github.com/datproject/rabin) - node-native addon for rabin fingerprinting of data streams
 
 ### Networking
 
-- 📔 [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to sources, uses discovery-channel
-- [discovery-channel](https://github.com/maxogden/discovery-channel) - discover data sources
-- [dns-discovery](https://github.com/mafintosh/dns-discovery) - use DNS name servers and Multicast DNS to discover sources
-- [bittorrent-dht](https://github.com/feross/bittorrent-dht) - use the Kademlia Mainline DHT to discover sources
-- [utp-native](https://github.com/mafintosh/utp-native) - UTP protocol implementation
+- :small_orange_diamond: [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses discovery-swarm
+- :small_orange_diamond: [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses discovery-channel
+- :small_red_triangle: [discovery-channel](https://github.com/maxogden/discovery-channel) - search multiple discovery networks and find peers who answer
+- :small_red_triangle: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and multicast-dns
+- :small_red_triangle: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete implementation of DHT peer discovery protocol in javaScript
+- :small_blue_diamond: [utp-native](https://github.com/mafintosh/utp-native) - utp protocol implementation, based on libutp native bindings
 
-### Random Access
+### File Access
 
-If you are receiving a file in multiple pieces in a distributed system it can be useful to write these pieces. Dat has some modules to do that!
-
+- [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - Base class for random access stores, such as random-access-file and  random-access-memory.
 - [random-access-file](https://github.com/mafintosh/random-access-file) - Continuous reading or writing to a file using random offsets and lengths
 - [random-access-memory](https://github.com/mafintosh/random-access-memory) - Exposes the same interface as random-access-file but instead of writing/reading data to a file it maintains it in memory
-- [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - Base class for random access stores, such as random-access-file and  random-access-memory.
 - [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - An abstract-random-access backend that writes to fixed size page files instead of a single file. Useful for sparse data.
 
 
-## Dat CLI Tools
+### Command-line
 
-We have our main Dat CLI tool, but there are also other CLI tools to help debugging, to find info about a Dat, or use Dat in different ways.
+Besides the main [dat-cli](https://github.com/datproject/dat) there are other command-line tools:
 
 - [dat-ls](https://github.com/mafintosh/dat-ls) - Small program that lists all the changes in a dat
 - [hyperhttp-cli](https://github.com/joehand/hyperhttp-cli) - simple CLI tool to view a feed or archive metadata on a local http server.
@@ -136,13 +136,22 @@ There are lots of modules that help you use, manage, and track Dat archives or h
 
 ### Web & Development
 
+- [Beaker Browser](https://beakerbrowser.com/) - A Web Browser that surfs Dats.
 - [hyperfeed](https://github.com/poga/hyperfeed) - A self-archiving P2P live feed. You can convert any RSS/ATOM/RDF feed to a P2P live update publishing network.
 - [git-dat](https://github.com/substack/git-dat) - git plugin to use dat:// remotes
 - [hyperpipe](https://github.com/mafintosh/hyperpipe) - Distributed input/output pipe.
+
+
+## Organization
+
+- [datproject.org](https://github.com/datproject/website) - datproject.org on github
+- [docs.datproject.org](https://github.com/datproject/docs) - docs.datproject.org on github
+- [discussions](https://github.com/datproject/discussions/issues) - general dat project discussion, ideas, feature requests
+- [styleguide](https://github.com/datproject/design) - styleguide and visual assets for the dat project
 
 
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, [clkao](https://github.com/clkao), the Dat team, and contributors have waived all copyright and related or neighboring rights to this work.
+To the extent possible under law, the Dat team, and contributors have waived all copyright and related or neighboring rights to this work.
