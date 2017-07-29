@@ -19,10 +19,11 @@
 
 ## Ecosystem
 
-The dat ecosystem consists of many modules provided by the dat project and by the community. The dat project modules are marked:<br>
-&nbsp;&nbsp;:small_orange_diamond: = core modules which the dat technology is built on<br>
-&nbsp;&nbsp;:small_blue_diamond: = additional modules to be used in dat-based decentralized apps<br>
-&nbsp;&nbsp;:small_red_triangle: = important external modules the dat technology is built on
+The dat ecosystem consists of many modules provided by dat project and the community:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:small_orange_diamond: = core modules which the dat technology is built on<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:small_blue_diamond: = additional modules provided by the dat project<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:small_red_triangle: = important external modules the dat technology is built on
+&nbsp;&nbsp;&nbsp;&nbsp;:black_small_square: = community-contributed ecosystem modules
 
 ### Top-level
 
@@ -30,35 +31,33 @@ The dat ecosystem consists of many modules provided by the dat project and by th
 &nbsp;&nbsp;:small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework<br>
 &nbsp;&nbsp;:small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats<br>
 &nbsp;&nbsp;:small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats<br>
-- [test](test.html) Test
 
-Hypercore and hyperdrive are core components for dat wire protocol, file-management, -verification and -sharing
+Hypercore and hyperdrive are core components for dat wire protocol, file management, verification and sharing
 
-- :small_orange_diamond: [hyperdrive](https://github.com/mafintosh/hyperdrive) - secure, decentralized peer-to-peer file system on top of hypercore
-- :small_orange_diamond: [hypercore](https://github.com/mafintosh/hypercore) - decentralized peer-to-peer append-only logs on top of hypercore protocol
-- :small_orange_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol
+&nbsp;&nbsp;:small_orange_diamond: [hyperdrive](https://github.com/mafintosh/hyperdrive) - secure, decentralized peer-to-peer file system on top of hypercore<br>
+&nbsp;&nbsp;:small_orange_diamond: [hypercore](https://github.com/mafintosh/hypercore) - decentralized peer-to-peer append-only logs using hypercore protocol<br>
+&nbsp;&nbsp;:small_orange_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol<br>
 
 ### Streams
 
-- :small_orange_diamond: [merkle-tree-stream](https://github.com/mafintosh/merkle-tree-stream) - construct merkle trees from chunks of incoming data
-- :small_blue_diamond: [rabin](https://github.com/datproject/rabin) - node-native addon for rabin fingerprinting of data streams
+&nbsp;&nbsp;:small_orange_diamond: [merkle-tree-stream](https://github.com/mafintosh/merkle-tree-stream) - construct merkle trees from chunks of incoming data<br>
+&nbsp;&nbsp;:small_blue_diamond: [rabin](https://github.com/datproject/rabin) - node-native addon for rabin fingerprinting of data streams<br>
 
 ### Networking
 
-- :small_orange_diamond: [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses discovery-swarm
-- :small_orange_diamond: [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses discovery-channel
-- :small_red_triangle: [discovery-channel](https://github.com/maxogden/discovery-channel) - search multiple discovery networks and find peers who answer
-- :small_red_triangle: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and multicast-dns
-- :small_red_triangle: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete implementation of DHT peer discovery protocol in javaScript
-- :small_blue_diamond: [utp-native](https://github.com/mafintosh/utp-native) - utp protocol implementation, based on libutp native bindings
+&nbsp;&nbsp;:small_orange_diamond: [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses discovery-swarm<br>
+&nbsp;&nbsp;:small_orange_diamond: [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses discovery-channel<br>
+&nbsp;&nbsp;:small_blue_diamond: [utp-native](https://github.com/mafintosh/utp-native) - utp protocol implementation, based on `libutp` native bindings<br>
+&nbsp;&nbsp;:small_red_triangle: [discovery-channel](https://github.com/maxogden/discovery-channel) - search discovery networks to find answering peers<br>
+&nbsp;&nbsp;:small_red_triangle: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and multicast-dns<br>
+&nbsp;&nbsp;:small_red_triangle: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete js implementation of DHT peer discovery protocol<br>
 
 ### File Access
 
-- [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - Base class for random access stores, such as random-access-file and  random-access-memory.
-- [random-access-file](https://github.com/mafintosh/random-access-file) - Continuous reading or writing to a file using random offsets and lengths
-- [random-access-memory](https://github.com/mafintosh/random-access-memory) - Exposes the same interface as random-access-file but instead of writing/reading data to a file it maintains it in memory
-- [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - An abstract-random-access backend that writes to fixed size page files instead of a single file. Useful for sparse data.
-
+&nbsp;&nbsp;:small_orange_diamond: [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - base class for random access stores<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-file](https://github.com/mafintosh/random-access-file) - continuous reading / writing to files using random offset and lengths<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-memory](https://github.com/mafintosh/random-access-memory) - same as `random-access-file` but maintains data in memory<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - abstract-random-access backend writing to fixed size page files, useful for sparse data<br>
 
 ### Command-line
 
