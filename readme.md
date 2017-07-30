@@ -116,7 +116,7 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_orange_diamond: [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`<br>
 &nbsp;&nbsp;:small_orange_diamond: [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-push](https://github.com/joehand/dat-push) - small cli for pushing files to a `dat-archiver` or `dat-publish` server<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-now](https://github.com/joehand/dat-now) - publish live syncing and versioned websites, files or whatever to `now.sh` instantly
+&nbsp;&nbsp;:small_blue_diamond: [dat-now](https://github.com/joehand/dat-now) - publish live syncing and versioned websites, files or whatever to `now.sh` instantly<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-ln](https://github.com/poga/hyperdrive-ln) - create symbolic links between hyperdrive archives<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-multiwriter](https://github.com/substack/hyperdrive-multiwriter) - present a bundle of hyperdrive archives together as a multi-writer view<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-named-archives](https://github.com/substack/hyperdrive-named-archives) - create hyperdrive archives that store and load link keys from names<br>
@@ -169,7 +169,7 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-network-speed](https://github.com/joehand/hyperdrive-network-speed) - track upload and download speeds on hyperdrive archives<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-stats](https://github.com/juliangruber/hyperdrive-stats) - live and persistent statistics tracker for hyperdrive archives<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-stats-server](https://github.com/karissa/hypercore-stats-server) - server for sending hypercore / hyperdrive stats over server-side events<br>
-&nbsp;&nbsp;:small_blue_diamond: [hyperdrive-stats-ui](https://github.com/mafintosh/hypercore-stats-ui) - html-based user interface to `hypercore-stats-server`
+&nbsp;&nbsp;:small_blue_diamond: [hyperdrive-stats-ui](https://github.com/mafintosh/hypercore-stats-ui) - html-based user interface to `hypercore-stats-server`<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-doctor](https://github.com/joehand/dat-doctor) - diagnose networking problems for dat, comes bundled with `dat-cli`<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperhealth](https://github.com/karissa/hyperhealth) - monitor health of hyperdrive or dat archives, e.g. peer count and peer mirror %<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-log](https://github.com/joehand/dat-log) - simple cli that lists the history of a dat archive<br>
