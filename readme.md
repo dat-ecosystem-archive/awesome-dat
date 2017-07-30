@@ -9,7 +9,6 @@
 [![#dat IRC channel on freenode](https://img.shields.io/badge/irc%20channel-%23dat%20on%20freenode-blue.svg)](http://webchat.freenode.net/?channels=dat)
 [![datproject/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/datproject/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-<br>
 |&nbsp; [Technology](#technology) &nbsp;|&nbsp; [Documentation](https://docs.datproject.org) :link: &nbsp;|&nbsp; [Ecosystem](#ecosystem) &nbsp;|&nbsp; [Applications](#applications) &nbsp;|&nbsp; [Information](#information) &nbsp;|&nbsp; [Organization](#organization) &nbsp;|
 
 ## Technology
