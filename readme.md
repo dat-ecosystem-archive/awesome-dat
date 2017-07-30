@@ -2,21 +2,22 @@
 
 [<img src="http://datproject.github.io/design/downloads/dat-data-logo.png" align="right" width="140">](https://datproject.org)
 
-> A curated list of the [Dat Project](https://datproject.org) ecosystem.
+> A curated list of the [Dat Project](https://datproject.org) ecosystem for creating decentralized peer-to-peer applications.
 
 *Please read the [contribution guidelines](contributing.md) before contributing.*
 
 [![#dat IRC channel on freenode](https://img.shields.io/badge/irc%20channel-%23dat%20on%20freenode-blue.svg)](http://webchat.freenode.net/?channels=dat)
 [![datproject/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/datproject/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-|&nbsp; [Technology](#technology) &nbsp;|&nbsp; [Documentation](https://docs.datproject.org) :link: &nbsp;|&nbsp; [Ecosystem](#ecosystem) &nbsp;|&nbsp; [Applications](#applications) &nbsp;|&nbsp; [Information](#information) &nbsp;|&nbsp; [Organization](#organization) &nbsp;|
+|&nbsp; **[Technology](#technology)** &nbsp;|&nbsp; **[Documentation](https://docs.datproject.org)** :link: &nbsp;|&nbsp; **[Ecosystem](#ecosystem)** &nbsp;|&nbsp; **[Applications](#applications)** &nbsp;|&nbsp; **[Information](#information)** &nbsp;|&nbsp; **[Organization](#organization)** &nbsp;|
 
 ## Technology
 
 - [dat whitepaper](https://datproject.org/paper) - whitepaper 'dat - distributed dataset synchronization And versioning' (pdf)
 - [how dat works](https://github.com/datproject/docs/blob/master/docs/how-dat-works.md) - high-level tecnical explanation of how dat works
 - [how hypercore works](https://github.com/datproject/docs/blob/master/docs/hyperdrive_spec.md) - in-depth technical explanation of hypercore and hyperdrive
-- [dat.json](https://github.com/juliangruber/dat.json) - specification for the dat.json meta format
+- [SLEEP specification](https://github.com/datproject/docs/blob/master/papers/dat-paper.md#3-sleep-specification) - specification of the on-disk format of dat archives
+- [dat.json specification](https://github.com/juliangruber/dat.json) - specification of the dat.json metadata format
 
 ## Ecosystem
 
@@ -32,6 +33,7 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 - [data storage](#data-storage)
 - [database](#database)
 - [file exchange](#file-exchange)
+- [backup](#backup)
 - [monitoring](#monitoring)
 
 
@@ -40,6 +42,7 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 > &nbsp;&nbsp;&nbsp;&nbsp;:small_blue_diamond: _optional modules provided by the dat project_<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;:small_red_triangle: _important external modules the dat technology depends on_<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;:black_small_square: _community-contributed ecosystem modules_<br>
+
 
 ### Management
 
@@ -143,6 +146,14 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:black_small_square: [hyperdrive-to-zip-stream](https://github.com/pfrazee/hyperdrive-to-zip-stream) - export hyperdrive archives as a zip files<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-staging-area](https://github.com/pfrazee/hyperdrive-staging-area) - staging area for uncommited writes that can sync to a hyperdrive archive<br>
 
+### Backup
+
+&nbsp;&nbsp;:small_blue_diamond: [dat-archiver](https://github.com/maxogden/dat-archiver) - archiver peer that backs up dat archives, based on `hypercore-archiver`<br>
+&nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver](https://github.com/mafintosh/hypercore-archiver) - archiver peer that backs up multiple hypercore / hyperdrive feeds to disk<br>
+&nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver-bot](https://github.com/mafintosh/hypercore-archiver-bot) - IRC bot that provides an interface to `hypercore-archiver`<br>
+&nbsp;&nbsp;:small_blue_diamond: [archiver-server](https://github.com/joehand/archiver-server) - serve `hypercore-archiver` feeds over the dat network and http, uses `discovery-swarm`<br>
+&nbsp;&nbsp;:small_blue_diamond: [archiver-api](https://github.com/joehand/archiver-api) - simple rest api for accessing `hypercore-archiver` peers<br>
+
 ### Monitoring
 
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-stats](https://github.com/juliangruber/hyperdrive-stats) - live and persistent statistics tracker for hyperdrive archives<br>
@@ -152,22 +163,17 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_blue_diamond: [dat-ls](https://github.com/mafintosh/dat-ls) - simple cli that lists all the changes in a dat archive<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperhttp-cli](https://github.com/joehand/hyperhttp-cli) - simple cli to view a feed or archive metadata over http<br>
 
-### Backup
-
-&nbsp;&nbsp;:small_blue_diamond: [dat-archiver](https://github.com/maxogden/dat-archiver) - archiver peer that backs up dat archives, based on `hypercore-archiver`<br>
-&nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver](https://github.com/mafintosh/hypercore-archiver) - archiver peer that backs up multiple hypercore / hyperdrive feeds to disk<br>
-&nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver-bot](https://github.com/mafintosh/hypercore-archiver-bot) - IRC bot that provides an interface to `hypercore-archiver`<br>
-&nbsp;&nbsp;:small_blue_diamond: [archiver-server](https://github.com/joehand/archiver-server) - serve `hypercore-archiver` feeds over the dat network and http, uses `discovery-swarm`<br>
-&nbsp;&nbsp;:small_blue_diamond: [archiver-api](https://github.com/joehand/archiver-api) - simple rest api for accessing `hypercore-archiver` peers<br>
-
 ## Applications
 
-- [Beaker Browser](https://beakerbrowser.com/) - A Web Browser that surfs Dats.
-- [Science Fair](https://github.com/codeforscience/sciencefair) - Search, collect, read and reuse the scientific literature over Dat
-- [dat.haus](https://github.com/juliangruber/dat.haus) - The composable HTTP API to the dat network
-- [Project Svalbard](https://github.com/datproject/svalbard) - a distributed scientific data archiving network
+- [beaker-browser](https://beakerbrowser.com/) - rethink the web browser for a better web: beaker, a decentralized browser
+- [sciencefair](https://github.com/codeforscience/sciencefair) - liberating and safeguarding scientific literature for the benefit of all of humanity
+- [dat.haus](https://github.com/juliangruber/dat.haus) - dat + http + unix, the composable http api to the dat network
+- [svalbard](https://github.com/datproject/svalbard) - global metadata vault for public-domain assets
+- [soundcloud-archiver](https://github.com/jondashkyle/soundcloud-archiver) - decentralized archives rescue music in case soundcloud shuts down
 
 ## Information
+
+- 
 
 ## Organization
 
