@@ -9,6 +9,7 @@
 [![#dat IRC channel on freenode](https://img.shields.io/badge/irc%20channel-%23dat%20on%20freenode-blue.svg)](http://webchat.freenode.net/?channels=dat)
 [![datproject/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/datproject/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+| [Technology](#technology) | [Ecosystem](#ecosystem) | [Applications](#applications) | [Information](#information) | [Organization](#organization) |
 
 ## Technology
 
@@ -19,32 +20,36 @@
 
 ## Ecosystem
 
-The dat ecosystem consists of many modules provided by dat project and the community.
+The dat ecosystem consists of many modules provided by dat project and the community:
 
-- [Top-level](#top-level)
-- [Streams](#streams)
-- [Networking](#networking)
-- [File access](#file-access)
-- [Command-line](#command-line)
+<br><div style="float: right">
+> Modules are labeled as follows:<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:small_orange_diamond: _core modules which the dat technology is built on_<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:small_blue_diamond: _additional modules provided by the dat project_<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:small_red_triangle: _important external modules the dat technology depends on_<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;:black_small_square: _community-contributed ecosystem modules_<br>
+</div>
 
-> Modules are labeled as folows:<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;:small_orange_diamond: core modules which the dat technology is built on<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;:small_blue_diamond: additional modules provided by the dat project<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;:small_red_triangle: important external modules the dat technology is built on<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;:black_small_square: community-contributed ecosystem modules<br>
+- [management](#management)
+- [streams](#streams)
+- [networking](#networking)
+- [http / web](#http-web)
+- [data access](#file-access)
+- [data storage](#data-storage)
+- [command-line](#command-line)
 
-### Top-level
+
+### Management
 
 &nbsp;&nbsp;:small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework<br>
-&nbsp;&nbsp;:small_orange_diamond: [dat-js](https://github.com/datproject/dat-js) - browser-based api to the dat framework<br>
-&nbsp;&nbsp;:small_orange_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats<br>
-&nbsp;&nbsp;:small_orange_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-js](https://github.com/datproject/dat-js) - browser api to the dat framework<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats<br>
 
-Hypercore and hyperdrive are core components for dat wire protocol, file management, verification and sharing
+Core components for dat wire protocol, file management, verification and sharing:
 
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive](https://github.com/mafintosh/hyperdrive) - secure, decentralized peer-to-peer file system on top of hypercore<br>
 &nbsp;&nbsp;:small_orange_diamond: [hypercore](https://github.com/mafintosh/hypercore) - decentralized peer-to-peer append-only logs using hypercore protocol<br>
-&nbsp;&nbsp;:small_orange_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol<br>
 
 ### Streams
 
@@ -53,19 +58,33 @@ Hypercore and hyperdrive are core components for dat wire protocol, file managem
 
 ### Networking
 
-&nbsp;&nbsp;:small_orange_diamond: [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses discovery-swarm<br>
-&nbsp;&nbsp;:small_orange_diamond: [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses discovery-channel<br>
+&nbsp;&nbsp;:small_orange_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol<br>
+&nbsp;&nbsp;:small_orange_diamond: [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses `discovery-swarm`<br>
+&nbsp;&nbsp;:small_orange_diamond: [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses `discovery-channel`<br>
 &nbsp;&nbsp;:small_blue_diamond: [utp-native](https://github.com/mafintosh/utp-native) - utp protocol implementation, based on `libutp` native bindings<br>
 &nbsp;&nbsp;:small_red_triangle: [discovery-channel](https://github.com/maxogden/discovery-channel) - search discovery networks to find answering peers<br>
 &nbsp;&nbsp;:small_red_triangle: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and multicast-dns<br>
 &nbsp;&nbsp;:small_red_triangle: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete js implementation of DHT peer discovery protocol<br>
 
-### File access
+### HTTP / Web
+
+&nbsp;&nbsp;:small_orange_diamond: [dat-dns](https://github.com/datprotocol/dat-dns) - issue dns lookups for dat archives using https requests to a target host<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-http](https://github.com/datproject/dat-http) - http transport and storage provider for dat archives<br>
+
+### Data access
 
 &nbsp;&nbsp;:small_orange_diamond: [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - base class for random access stores<br>
-&nbsp;&nbsp;:small_blue_diamond: [random-access-file](https://github.com/mafintosh/random-access-file) - continuous reading / writing to files using random offset and lengths<br>
-&nbsp;&nbsp;:small_blue_diamond: [random-access-memory](https://github.com/mafintosh/random-access-memory) - same as `random-access-file` but maintains data in memory<br>
+&nbsp;&nbsp;:small_orange_diamond: [multi-random-access](https://github.com/mafintosh/multi-random-access) - combine multiple `abstract-random-access` stores into a single one<br>
+&nbsp;&nbsp;:small_orange_diamond: [random-access-file](https://github.com/mafintosh/random-access-file) - continuous reading / writing to files using random offset and lengths<br>
+&nbsp;&nbsp;:small_orange_diamond: [random-access-memory](https://github.com/mafintosh/random-access-memory) - same as `random-access-file` but maintains data in memory<br>
+&nbsp;&nbsp;:small_orange_diamond: [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`<br>
+&nbsp;&nbsp;:small_orange_diamond: [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem<br>
 &nbsp;&nbsp;:small_blue_diamond: [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - backend writing to fixed size page files, useful for sparse data<br>
+
+### Data storage
+
+&nbsp;&nbsp;:small_orange_diamond: [dat-storage](https://github.com/datproject/dat-storage) - hyperdrive storage provider for dat archives<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-storage](https://github.com/datproject/dat-secret-storage) - hyperdrive storage provider for secret keys<br>
 
 ### Command-line
 
