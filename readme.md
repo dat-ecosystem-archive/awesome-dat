@@ -45,8 +45,8 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 &nbsp;&nbsp;:small_orange_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-js](https://github.com/datproject/dat-js) - browser api to the dat framework<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dats<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dats<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dat archives<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-desktop](https://github.com/datproject/dat-desktop) - desktop app for managing dat archives<br>
 &nbsp;&nbsp;:black_small_square: [pauls-dat-api](https://github.com/beakerbrowser/pauls-dat-api) - common operations to ease working with dat and hyperdrive, uses `dat-node`<br>
 
 ### Core
@@ -62,7 +62,7 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:black_small_square: [normcore](https://github.com/yoshuawuyts/normcore) - no-config distributed streams using `hypercore`<br>
 &nbsp;&nbsp;:black_small_square: [github-to-hypercore](https://github.com/yoshuawuyts/github-to-hypercore) - stream github event feeds into hypercore feeds, uses `normcore`<br>
 &nbsp;&nbsp;:black_small_square: [hyperfeed](https://github.com/poga/hyperfeed) - publish decentralized rss, atom or rdf feeds, based on `hyperdrive` and `feed`<br>
-&nbsp;&nbsp;:black_small_square: [hyperspark](https://github.com/poga/hyperspark) - decentralized data processing platform for dat archives, inspired by `spark`
+&nbsp;&nbsp;:black_small_square: [hyperspark](https://github.com/poga/hyperspark) - decentralized data processing platform for dat archives, inspired by `spark`<br>
 &nbsp;&nbsp;:small_red_triangle: [readable-stream](https://github.com/nodejs/readable-stream) - stable stream api implementation for all node versions<br>
 
 ### Networking
@@ -70,25 +70,33 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_orange_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-protocol](https://github.com/juliangruber/hyperdrive-encoding) -  message encoding used by `hyperdrive`<br>
 &nbsp;&nbsp;:small_orange_diamond: [dat-encoding](https://github.com/juliangruber/dat-encoding) - encoder and decoder that supports the dat url-scheme<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-dns](https://github.com/datprotocol/dat-dns) - issue dns lookups for dat archives using https requests to a target host<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-link-resolve](https://github.com/joehand/dat-link-resolve) - resolve dat url's, links to a dat key using common methods, uses `dat-dns`<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses `discovery-swarm`<br>
 &nbsp;&nbsp;:small_orange_diamond: [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses `discovery-channel`<br>
-&nbsp;&nbsp;:small_blue_diamond: [peer-network](https://github.com/mafintosh/peer-network) - create internet-accessible servers/clients listening on names, not hostnames / ports, uses`hyperdht`<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-swarm-defaults](https://github.com/joehand/dat-swarm-defaults) - default configuration for dns and dht for use with `discovery-swarm`<br>
+&nbsp;&nbsp;:small_blue_diamond: [peer-network](https://github.com/mafintosh/peer-network) - create internet-accessible servers/clients listening on names, not hostnames<br>
+&nbsp;&nbsp;:small_blue_diamond: [hyperdht](https://github.com/mafintosh/hyperdht) - DHT that supports peer discovery and distributed hole punching<br>
 &nbsp;&nbsp;:small_blue_diamond: [utp-native](https://github.com/mafintosh/utp-native) - utp protocol implementation, based on `libutp` native bindings<br>
 &nbsp;&nbsp;:small_red_triangle: [discovery-channel](https://github.com/maxogden/discovery-channel) - search discovery networks to find answering peers<br>
 &nbsp;&nbsp;:small_red_triangle: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and multicast-dns<br>
-&nbsp;&nbsp;:small_red_triangle: [hyperdht](https://github.com/mafintosh/hyperdht) - DHT that supports peer discovery and distributed hole punching<br>
 &nbsp;&nbsp;:small_red_triangle: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete js implementation of DHT peer discovery protocol<br>
 &nbsp;&nbsp;:small_red_triangle: [protocol-buffers](https://github.com/mafintosh/protocol-buffers) - data serialization standard and library used by `hypercore-protocol`<br>
 
-### Encryption
+### Security
 
+&nbsp;&nbsp;:small_orange_diamond: [dat-registry-api](https://github.com/datproject/dat-registry-api) - account registry api for dat archives with user accounts, uses `township`<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-registry-client](https://github.com/datproject/dat-registry-client) - client for registry api for user registration, login and publishing<br>
+&nbsp;&nbsp;:black_small_square: [dat-pki](https://github.com/jayrbolton/dat-pki) - public key infrastructure for user accounts, private sharing, encrypted messaging, and more<br>
 &nbsp;&nbsp;:small_red_triangle: [sodium-universal](https://github.com/sodium-friends/sodium-universal) - wrapper for `libsodium` for use in node and the browser<br>
+&nbsp;&nbsp;:small_red_triangle: [township](https://github.com/township/township) - rest api route handlers for handling user authentication<br>
 
 ### HTTP / Web
 
-&nbsp;&nbsp;:small_orange_diamond: [dat-dns](https://github.com/datprotocol/dat-dns) - issue dns lookups for dat archives using https requests to a target host<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-http](https://github.com/datproject/dat-http) - http transport and storage provider for dat archives<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-http](https://github.com/joehand/hyperdrive-http) - serve hyperdrive archives over http<br>
+&nbsp;&nbsp;:small_blue_diamond: [hyperdrive-http](https://github.com/mafintosh/hyperdrive-http-server) - small cli to serve hyperdrive archives over http<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-publish](https://github.com/joehand/hyperdrive-http) - small cli to publish dat archives to a `hyperdrive-http` or `dat-archiver` server<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-ui](https://github.com/karissa/hyperdrive-ui) - render hyperdrive archives as html in the browser<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-elements](https://github.com/datproject/dat-elements) - reusable ui elements for dat-based apps, such as loader, sprite, icon<br>
 &nbsp;&nbsp;:black_small_square: [dat-colors](https://github.com/kriesse/dat-colors) - css color definitions that match dat styleguide<br>
@@ -96,13 +104,9 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 ### Data access
 
-&nbsp;&nbsp;:small_orange_diamond: [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - base class for random access stores<br>
 &nbsp;&nbsp;:small_orange_diamond: [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`<br>
 &nbsp;&nbsp;:small_orange_diamond: [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem<br>
-&nbsp;&nbsp;:small_orange_diamond: [multi-random-access](https://github.com/mafintosh/multi-random-access) - combine multiple `abstract-random-access` stores into a single one<br>
-&nbsp;&nbsp;:small_blue_diamond: [random-access-file](https://github.com/mafintosh/random-access-file) - continuous reading / writing to files using random offset and lengths<br>
-&nbsp;&nbsp;:small_blue_diamond: [random-access-memory](https://github.com/mafintosh/random-access-memory) - same as `random-access-file` but maintains data in memory<br>
-&nbsp;&nbsp;:small_blue_diamond: [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - backend writing to fixed size page files, useful for sparse data<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-push](https://github.com/joehand/dat-push) - small cli for pushing files to a `dat-archiver` or `dat-publish` server<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-ln](https://github.com/poga/hyperdrive-ln) - create symbolic links between hyperdrive archives<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-multiwriter](https://github.com/substack/hyperdrive-multiwriter) - present a bundle of hyperdrive archives together as a multi-writer view<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-named-archives](https://github.com/substack/hyperdrive-named-archives) - create hyperdrive archives that store and load link keys from names<br>
@@ -114,6 +118,11 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 &nbsp;&nbsp;:small_orange_diamond: [dat-storage](https://github.com/datproject/dat-storage) - hyperdrive storage provider for dat archives<br>
 &nbsp;&nbsp;:small_orange_diamond: [dat-secret-storage](https://github.com/datproject/dat-secret-storage) - hyperdrive storage provider for secret keys<br>
+&nbsp;&nbsp;:small_orange_diamond: [abstract-random-access](https://github.com/juliangruber/abstract-random-access) - base class for random access stores<br>
+&nbsp;&nbsp;:small_orange_diamond: [multi-random-access](https://github.com/mafintosh/multi-random-access) - combine multiple `abstract-random-access` stores into a single one<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-file](https://github.com/mafintosh/random-access-file) - continuous reading / writing to files using random offset and lengths<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-memory](https://github.com/mafintosh/random-access-memory) - same as `random-access-file` but maintains data in memory<br>
+&nbsp;&nbsp;:small_blue_diamond: [random-access-page-files](https://github.com/mafintosh/random-access-page-files) - backend writing to fixed size page files, useful for sparse data<br>
 &nbsp;&nbsp;:black_small_square: [node-dat-archive](https://github.com/beakerbrowser/node-dat-archive) - node api that supports beaker browser DatArchive format, uses `pauls-dat-api`<br>
 
 ### Database
@@ -123,30 +132,33 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 ### File exchange
 
+&nbsp;&nbsp;:small_orange_diamond: [dat-ignore](https://github.com/joehand/dat-ignore) - check files against `.datignore` before adding to a dat archive<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-json](https://github.com/joehand/dat-json) - read and write `dat.json` files, uses `toiletdb`<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-import-files](https://github.com/juliangruber/hyperdrive-import-files) - import files and folders into a hyperdrive archive<br>
 &nbsp;&nbsp;:small_blue_diamond: [zip-to-hyperdrive](https://github.com/karissa/zip-to-hyperdrive) - import contents of a zip archive into a hyperdrive archive<br>
 &nbsp;&nbsp;:small_blue_diamond: [url-dat](https://github.com/joehand/url-dat) - import files from http url's into a hyperdrive archive, uses `tar-dat`<br>
 &nbsp;&nbsp;:small_blue_diamond: [tar-dat](https://github.com/joehand/tar-dat) - stream tar files into a hyperdrive archive<br>
-&nbsp;&nbsp;:small_blue_diamond: [hyperpipe](https://github.com/mafintosh/hyperpipe) - simple cli to pipe and read files into live hypercore feeds<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-duplicate](https://github.com/joehand/hyperdrive-duplicate) - check if a file is a duplicate to a hyperdrive archive entry<br>
+&nbsp;&nbsp;:small_blue_diamond: [hyperpipe](https://github.com/mafintosh/hyperpipe) - simple cli to pipe and read files into live hypercore feeds<br>
 &nbsp;&nbsp;:black_small_square: [hyperdrive-to-zip-stream](https://github.com/pfrazee/hyperdrive-to-zip-stream) - export hyperdrive archives as a zip files<br>
-&nbsp;&nbsp;:black_small_square: [hyperdrive-staging-area](https://github.com/pfrazee/hyperdrive-staging-area) - staging area for local, uncommited writes that can sync to a hyperdrive archive<br>
+&nbsp;&nbsp;:black_small_square: [hyperdrive-staging-area](https://github.com/pfrazee/hyperdrive-staging-area) - staging area for uncommited writes that can sync to a hyperdrive archive<br>
 
 ### Monitoring
 
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-stats](https://github.com/juliangruber/hyperdrive-stats) - live and persistent statistics tracker for hyperdrive archives<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-network-speed](https://github.com/joehand/hyperdrive-network-speed) - track upload and download speeds on hyperdrive archives<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-doctor](https://github.com/joehand/dat-doctor) - diagnose networking problems for dat, comes bundled with `dat-cli`<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-ls](https://github.com/mafintosh/dat-ls) - simple cli that lists all the changes in a dat<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-log](https://github.com/joehand/dat-log) - simple cli that lists the history of a dat archive<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-ls](https://github.com/mafintosh/dat-ls) - simple cli that lists all the changes in a dat archive<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperhttp-cli](https://github.com/joehand/hyperhttp-cli) - simple cli to view a feed or archive metadata over http<br>
 
 ### Backup
 
-- [dat-archiver](https://github.com/maxogden/dat-archiver) - archiver peer that backs up dat archives, based on `hypercore-archiver`<br>
-- [hypercore-archiver](https://github.com/mafintosh/hypercore-archiver) - archiver peer that backs up multiple hypercore / hyperdrive feeds to disk<br>
-- [hypercore-archiver-bot](https://github.com/mafintosh/hypercore-archiver-bot) - IRC bot that provides an interface to `hypercore-archiver`<br>
-- [archiver-server](https://github.com/joehand/archiver-server) - serve `hypercore-archiver` feeds over the dat network and http, uses `discovery-swarm`<br>
-- [archiver-api](https://github.com/joehand/archiver-api) - simple rest api for accessing `hypercore-archiver` peers<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-archiver](https://github.com/maxogden/dat-archiver) - archiver peer that backs up dat archives, based on `hypercore-archiver`<br>
+&nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver](https://github.com/mafintosh/hypercore-archiver) - archiver peer that backs up multiple hypercore / hyperdrive feeds to disk<br>
+&nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver-bot](https://github.com/mafintosh/hypercore-archiver-bot) - IRC bot that provides an interface to `hypercore-archiver`<br>
+&nbsp;&nbsp;:small_blue_diamond: [archiver-server](https://github.com/joehand/archiver-server) - serve `hypercore-archiver` feeds over the dat network and http, uses `discovery-swarm`<br>
+&nbsp;&nbsp;:small_blue_diamond: [archiver-api](https://github.com/joehand/archiver-api) - simple rest api for accessing `hypercore-archiver` peers<br>
 
 ## Applications
 
@@ -154,6 +166,8 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 - [Science Fair](https://github.com/codeforscience/sciencefair) - Search, collect, read and reuse the scientific literature over Dat
 - [dat.haus](https://github.com/juliangruber/dat.haus) - The composable HTTP API to the dat network
 - [Project Svalbard](https://github.com/datproject/svalbard) - a distributed scientific data archiving network
+
+## Information
 
 ## Organization
 
