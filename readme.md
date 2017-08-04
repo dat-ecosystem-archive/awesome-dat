@@ -26,12 +26,12 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 - [management](#management)
 - [core](#core)
 - [streams](#streams)
+- [security](#security)
 - [networking](#networking)
-- [encryption](#encryption)
 - [http / web](#http-web)
-- [data access](#file-access)
 - [data storage](#data-storage)
 - [database](#database)
+- [data exchange](#data-exchange)
 - [file exchange](#file-exchange)
 - [backup](#backup)
 - [monitoring](#monitoring)
@@ -44,6 +44,8 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 ### Management
 
+Top-level API and CLI packages, and desktop management apps to access Dat technology 
+
 &nbsp;&nbsp;:small_blue_diamond: [dat-node](https://github.com/datproject/dat-node) - node api to the dat framework<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-js](https://github.com/datproject/dat-js) - browser api to the dat framework<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-cli](https://github.com/datproject/dat) - command-line interface for managing dat archives<br>
@@ -52,10 +54,14 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 ### Core
 
+Hypercore and hyperdrive are core modules that are central to Dat design
+
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive](https://github.com/mafintosh/hyperdrive) - secure, decentralized peer-to-peer file system on top of hypercore<br>
 &nbsp;&nbsp;:small_blue_diamond: [hypercore](https://github.com/mafintosh/hypercore) - decentralized peer-to-peer append-only logs using hypercore protocol<br>
 
 ### Streams
+
+Modules that work at protocol stream level or provide stream-related functionality
 
 &nbsp;&nbsp;:small_blue_diamond: [merkle-tree-stream](https://github.com/mafintosh/merkle-tree-stream) - construct merkle trees from chunks of incoming data<br>
 &nbsp;&nbsp;:small_blue_diamond: [hypercore-index](https://github.com/juliangruber/hypercore-index) - linear asynchronous stateful indexing of a hypercore feed<br>
@@ -65,7 +71,17 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_orange_diamond: [hyperfeed](https://github.com/poga/hyperfeed) - publish decentralized rss, atom or rdf feeds, based on `hyperdrive` and `feed`<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperspark](https://github.com/poga/hyperspark) - decentralized data processing platform for dat archives, inspired by `spark`<br>
 
+### Security
+
+Modules involved with providing end-to-end security, encryption and privacy
+
+&nbsp;&nbsp;:small_blue_diamond: [dat-registry-api](https://github.com/datproject/dat-registry-api) - account registry api for dat archives with user accounts, uses `township`<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-registry-client](https://github.com/datproject/dat-registry-client) - client for registry api for user registration, login and publishing<br>
+&nbsp;&nbsp;:small_orange_diamond: [dat-pki](https://github.com/jayrbolton/dat-pki) - public key infrastructure for user accounts, private sharing, encrypted messaging, and more<br>
+
 ### Networking
+
+Modules involved in lower-level networking concepts, protocol support, p2p, peer discovery and gossiping
 
 &nbsp;&nbsp;:small_blue_diamond: [hypercore-protocol](https://github.com/mafintosh/hypercore-protocol) - stream implementation of the hypercore protocol<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-protocol](https://github.com/juliangruber/hyperdrive-encoding) -  message encoding used by `hyperdrive`<br>
@@ -81,13 +97,9 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_blue_diamond: [signalhub](https://github.com/mafintosh/signalhub) - simple signalling server that can be used to coordinate handshaking with webrtc<br> 
 &nbsp;&nbsp;:small_blue_diamond: [webrtc-swarm](https://github.com/mafintosh/webrtc-swarm) - create a swarm of p2p connections using webrtc and a signalhub<br>
 
-### Security
-
-&nbsp;&nbsp;:small_blue_diamond: [dat-registry-api](https://github.com/datproject/dat-registry-api) - account registry api for dat archives with user accounts, uses `township`<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-registry-client](https://github.com/datproject/dat-registry-client) - client for registry api for user registration, login and publishing<br>
-&nbsp;&nbsp;:small_orange_diamond: [dat-pki](https://github.com/jayrbolton/dat-pki) - public key infrastructure for user accounts, private sharing, encrypted messaging, and more<br>
-
 ### HTTP / Web
+
+Modules that make Dat technolgy accessible over http, or provide other web-oriented functionality
 
 &nbsp;&nbsp;:small_blue_diamond: [dat-http](https://github.com/datproject/dat-http) - http transport and storage provider for dat archives<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-http](https://github.com/joehand/hyperdrive-http) - serve hyperdrive archives over http<br>
@@ -100,20 +112,9 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_orange_diamond: [dat-colors](https://github.com/kriesse/dat-colors) - css color definitions that match dat styleguide<br>
 &nbsp;&nbsp;:small_orange_diamond: [dat-icons](https://github.com/kriesse/dat-icons) - svg icon definitions that match dat styleguide<br>
 
-### Data access
-
-&nbsp;&nbsp;:small_blue_diamond: [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`<br>
-&nbsp;&nbsp;:small_blue_diamond: [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-push](https://github.com/joehand/dat-push) - small cli for pushing files to a `dat-archiver` or `dat-publish` server<br>
-&nbsp;&nbsp;:small_blue_diamond: [dat-now](https://github.com/joehand/dat-now) - publish live syncing and versioned websites, files or whatever to `now.sh` instantly<br>
-&nbsp;&nbsp;:small_orange_diamond: [hyperdrive-ln](https://github.com/poga/hyperdrive-ln) - create symbolic links between hyperdrive archives<br>
-&nbsp;&nbsp;:small_orange_diamond: [hyperdrive-multiwriter](https://github.com/substack/hyperdrive-multiwriter) - present a bundle of hyperdrive archives together as a multi-writer view<br>
-&nbsp;&nbsp;:small_orange_diamond: [hyperdrive-named-archives](https://github.com/substack/hyperdrive-named-archives) - create hyperdrive archives that store and load link keys from names<br>
-&nbsp;&nbsp;:small_orange_diamond: [git-dat](https://github.com/substack/git-dat) - git plugin to use dat archives as remotes for a git repository<br>
-&nbsp;&nbsp;:small_orange_diamond: [jawn](https://github.com/CfABrigadePhiladelphia/jawn) - distributed version control for tabular data, based on `hypercore`<br>
-&nbsp;&nbsp;:small_orange_diamond: [parse-dat-url](https://github.com/pfrazee/parse-dat-url) - node's `url.parse` updated to support versioned dat url's<br>
-
 ### Data storage
+
+Modules for supported storage providers and formats that can be configured in a solution
 
 &nbsp;&nbsp;:small_blue_diamond: [dat-storage](https://github.com/datproject/dat-storage) - hyperdrive storage provider for dat archives<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-secret-storage](https://github.com/datproject/dat-secret-storage) - hyperdrive storage provider for secret keys<br>
@@ -126,10 +127,29 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 ### Database
 
+Databases with native support for Dat technology
+
 &nbsp;&nbsp;:small_blue_diamond: [hyperdb](https://github.com/mafintosh/hyperdb) - decentralized schemaless database with map/reduce-like behaviour, similar to couchdb<br>
 &nbsp;&nbsp;:small_orange_diamond: [injestdb](https://github.com/beakerbrowser/injestdb) - decentralized table/records-based database with sql-like behaviour, uses `node-dat-archive`<br>
 
+### Data exchange
+
+Modules to access, transfer, import and export data from hypercore- and dat archives, or that provide data exchange with external systems
+
+&nbsp;&nbsp;:small_blue_diamond: [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`<br>
+&nbsp;&nbsp;:small_blue_diamond: [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-push](https://github.com/joehand/dat-push) - small cli for pushing files to a `dat-archiver` or `dat-publish` server<br>
+&nbsp;&nbsp;:small_blue_diamond: [dat-now](https://github.com/joehand/dat-now) - publish live syncing and versioned websites, files or whatever to `now.sh` instantly<br>
+&nbsp;&nbsp;:small_orange_diamond: [hyperdrive-ln](https://github.com/poga/hyperdrive-ln) - create symbolic links between hyperdrive archives<br>
+&nbsp;&nbsp;:small_orange_diamond: [hyperdrive-multiwriter](https://github.com/substack/hyperdrive-multiwriter) - present a bundle of hyperdrive archives together as a multi-writer view<br>
+&nbsp;&nbsp;:small_orange_diamond: [hyperdrive-named-archives](https://github.com/substack/hyperdrive-named-archives) - create hyperdrive archives that store and load link keys from names<br>
+&nbsp;&nbsp;:small_orange_diamond: [git-dat](https://github.com/substack/git-dat) - git plugin to use dat archives as remotes for a git repository<br>
+&nbsp;&nbsp;:small_orange_diamond: [jawn](https://github.com/CfABrigadePhiladelphia/jawn) - distributed version control for tabular data, based on `hypercore`<br>
+&nbsp;&nbsp;:small_orange_diamond: [parse-dat-url](https://github.com/pfrazee/parse-dat-url) - node's `url.parse` updated to support versioned dat url's<br>
+
 ### File exchange
+
+Modules for accessing, transfering, importing and exporting files to and from local or remote hypercore- and dat archives
 
 &nbsp;&nbsp;:small_blue_diamond: [dat-ignore](https://github.com/joehand/dat-ignore) - check files against `.datignore` before adding to a dat archive<br>
 &nbsp;&nbsp;:small_blue_diamond: [dat-json](https://github.com/joehand/dat-json) - read and write `dat.json` files, uses `toiletdb`<br>
@@ -145,6 +165,8 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 
 ### Backup
 
+Modules for backing up files and data for long-term archiving and storage
+
 &nbsp;&nbsp;:small_blue_diamond: [dat-archiver](https://github.com/maxogden/dat-archiver) - archiver peer that backs up dat archives, based on `hypercore-archiver`<br>
 &nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver](https://github.com/mafintosh/hypercore-archiver) - archiver peer that backs up multiple hypercore / hyperdrive feeds to disk<br>
 &nbsp;&nbsp;:small_blue_diamond: [hypercore-archiver-bot](https://github.com/mafintosh/hypercore-archiver-bot) - IRC bot that provides an interface to `hypercore-archiver`<br>
@@ -154,6 +176,8 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 &nbsp;&nbsp;:small_blue_diamond: [dat-backup](https://github.com/joehand/dat-backup) - backup a dat archive as a single file to local storage and retain full history<br>
 
 ### Monitoring
+
+Modules for (real-time) monitoring, health checks and debugging of deployed Dat-based apps and solutions
 
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-network-speed](https://github.com/joehand/hyperdrive-network-speed) - track upload and download speeds on hyperdrive archives<br>
 &nbsp;&nbsp;:small_blue_diamond: [hyperdrive-stats](https://github.com/juliangruber/hyperdrive-stats) - live and persistent statistics tracker for hyperdrive archives<br>
