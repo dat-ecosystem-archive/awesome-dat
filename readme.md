@@ -193,13 +193,13 @@ Modules for (real-time) monitoring, health checks and debugging of deployed Dat-
 
 To provide its powerful features the Dat Project uses a number of important external modules:
 
-&nbsp;&nbsp;:small_black_square: [discovery-channel](https://github.com/maxogden/discovery-channel) - search discovery networks to find answering peers<br>
-&nbsp;&nbsp;:small_black_square: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and `multicast-dns`<br>
-&nbsp;&nbsp;:small_black_square: [multicast-dns](https://github.com/mafintosh/multicast-dns) - low-level multicast-dns implementation in pure javascript<br>
-&nbsp;&nbsp;:small_black_square: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete js implementation of DHT peer discovery protocol<br>
-&nbsp;&nbsp;:small_black_square: [protocol-buffers](https://github.com/mafintosh/protocol-buffers) - data serialization standard and library used by `hypercore-protocol`<br>
-&nbsp;&nbsp;:small_black_square: [sodium-universal](https://github.com/sodium-friends/sodium-universal) - wrapper for `libsodium` for use in node and the browser<br>
-&nbsp;&nbsp;:small_black_square: [township](https://github.com/township/township) - rest api route handlers for handling user authentication<br>
+&nbsp;&nbsp;:black_small_square: [discovery-channel](https://github.com/maxogden/discovery-channel) - search discovery networks to find answering peers<br>
+&nbsp;&nbsp;:black_small_square: [dns-discovery](https://github.com/mafintosh/dns-discovery) - discover peers using regular- and `multicast-dns`<br>
+&nbsp;&nbsp;:black_small_square: [multicast-dns](https://github.com/mafintosh/multicast-dns) - low-level multicast-dns implementation in pure javascript<br>
+&nbsp;&nbsp;:black_small_square: [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) - complete js implementation of DHT peer discovery protocol<br>
+&nbsp;&nbsp;:black_small_square: [protocol-buffers](https://github.com/mafintosh/protocol-buffers) - data serialization standard and library used by `hypercore-protocol`<br>
+&nbsp;&nbsp;:black_small_square: [sodium-universal](https://github.com/sodium-friends/sodium-universal) - wrapper for `libsodium` for use in node and the browser<br>
+&nbsp;&nbsp;:black_small_square: [township](https://github.com/township/township) - rest api route handlers for handling user authentication<br>
 
 ## Applications
 
