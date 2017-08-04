@@ -134,7 +134,7 @@ Databases with native support for Dat technology
 
 ### Data exchange
 
-Modules to access, transfer, import and export data from hypercore- and dat archives, or that provide data exchange with external systems
+Modules to access, transfer, import and export data from hypercore- and dat archives, or that interface with external systems
 
 &nbsp;&nbsp;:small_blue_diamond: [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`<br>
 &nbsp;&nbsp;:small_blue_diamond: [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem<br>
