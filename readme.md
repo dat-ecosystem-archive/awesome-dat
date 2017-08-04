@@ -195,6 +195,7 @@ The dat ecosystem consists of many modules provided by dat project and the commu
 - [Forking websites on the peer-to-peer web](https://beakerbrowser.com/2017/06/14/forking-websites-on-the-p2p-web.html) (June 2017)
 - [View source on the peer-to-peer web](https://beakerbrowser.com/2017/06/07/view-source-peer-to-peer.html) (June 2017)
 - [Self-mutating websites](https://beakerbrowser.com/2017/06/09/self-mutating-websites.html) (June 2017)
+- [Connect all the things! The state of NAT traversal](https://www.zerotier.com/blog/state-of-nat-traversal.shtml) (August 2014)
 
 ## Organization
 
