@@ -161,7 +161,7 @@ Modules for accessing, transfering, importing and exporting files to and from lo
 &nbsp;&nbsp;:small_blue_diamond: [hyperpipe](https://github.com/mafintosh/hyperpipe) - simple cli to pipe and read files into live hypercore feeds<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-to-zip-stream](https://github.com/pfrazee/hyperdrive-to-zip-stream) - export hyperdrive archives as a zip files<br>
 &nbsp;&nbsp;:small_orange_diamond: [hyperdrive-staging-area](https://github.com/pfrazee/hyperdrive-staging-area) - staging area for uncommited writes that can sync to a hyperdrive archive<br>
-&nbsp;&nbsp;:small_orange_diamond: [hyperirc(https://github.com/mafintosh/hyperirc) - bot that mirrors irc channels to a hypercore read-only log<br>
+&nbsp;&nbsp;:small_orange_diamond: [hyperirc](https://github.com/mafintosh/hyperirc) - bot that mirrors irc channels to a hypercore read-only log<br>
 
 ### Backup
 
