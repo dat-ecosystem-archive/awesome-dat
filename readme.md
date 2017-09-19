@@ -52,6 +52,7 @@ Tools for hosting Dats, managing sets of Dats, etc.
 - [hypercloud](https://github.com/datprotocol/hypercloud) - p2p + ☁
 - [hashbase](https://github.com/beakerbrowser/hashbase) - hosting for the peer-to-peer web
 - [dat-now](https://github.com/joehand/dat-now) - publish live syncing and versioned websites, files or whatever to `now.sh` instantly
+- [dat-share-all](https://github.com/frando/dat-share-all) - quickly share all dats located in a folder from the command-line
 
 Utilities for `hypercore-archiver`:
 
