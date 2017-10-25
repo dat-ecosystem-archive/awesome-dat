@@ -114,8 +114,9 @@ Tools for using hypercore feeds
 Things we used to build Dat. Dat tools (CLI, Desktop, dat-node) are opinonated versions of hyperdrive that work well for using facing applications.
 
 - [hyperdrive](https://github.com/mafintosh/hyperdrive) - secure, decentralized peer-to-peer file system on top of hypercore
-- [hyperdb](https://github.com/mafintosh/hyperdb) - distributed scalable database
 - [hypercore](https://github.com/mafintosh/hypercore) - decentralized peer-to-peer append-only logs using hypercore protocol
+- [hyperdb](https://github.com/mafintosh/hyperdb) - distributed scalable database built on hypercore (*hyperdb will be used in hyperdrive for multidrive after release*).
+
 
 ### CLI Utilities
 
