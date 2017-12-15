@@ -94,6 +94,7 @@ Utilities to show information about an existing dat archive.
 - [dat-ls](https://github.com/mafintosh/dat-ls) - simple cli that lists all the changes in a dat archive
 - [hyperhealth](https://github.com/karissa/hyperhealth) - monitor health of hyperdrive or dat archives, e.g. peer count and peer mirror %
 - [hyperdrive-network-speed](https://github.com/joehand/hyperdrive-network-speed) - track upload and download speeds on hyperdrive archives
+- [dat-shell](https://github.com/millette/dat-shell) - Open a remote dat and explore with cd, ls, cp, (pseudo)ln, etc.
 
 ### File Imports & Exports
 
