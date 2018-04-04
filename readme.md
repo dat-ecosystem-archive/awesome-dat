@@ -70,7 +70,7 @@ Dat project runs a registry at datproject.org. We use these tools to manage our 
 - [multidat](https://github.com/datproject/multidat) - manage dat archives in multiple locations, uses a dat factory, based on `multidrive`
 - [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem
 - [dat-pki](https://github.com/jayrbolton/dat-pki) - A public key infrastructure with many encryption utilities for Dat filesharing
-- [injestdb](https://github.com/beakerbrowser/injestdb) - decentralized table/records-based database with sql-like behaviour, uses `node-dat-archive`
+- [webdb](https://github.com/beakerbrowser/webdb) - decentralized table/records-based database with sql-like behaviour, uses `node-dat-archive`
 
 #### Http Hosting
 
