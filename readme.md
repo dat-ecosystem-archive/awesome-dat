@@ -31,6 +31,7 @@ Projects built using Dat to share and transfer data. Open a PR to add your proje
 - [hypertweet](https://github.com/joehand/hypertweet) - stream your twitter feed to a hypercore feed
 - [dat-photos-app](https://github.com/beakerbrowser/dat-photos-app) - decentralized, peer-to-peer photo sharing app for beaker browser
 - [Dat Installer](https://github.com/staltz/dat-installer) - Android mobile app to distribute APK updates
+- [hypercore-accounting](https://github.com/aks-/hypercore-accounting) - a very basic double entry accounting system (proof of concept of a business idea)
 
 ## Using Dat
 
