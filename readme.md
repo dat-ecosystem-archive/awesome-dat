@@ -32,6 +32,7 @@ Projects built using Dat to share and transfer data. Open a PR to add your proje
 - [dat-photos-app](https://github.com/beakerbrowser/dat-photos-app) - decentralized, peer-to-peer photo sharing app for beaker browser
 - [Dat Installer](https://github.com/staltz/dat-installer) - Android mobile app to distribute APK updates
 - [hypercore-accounting](https://github.com/aks-/hypercore-accounting) - a very basic double entry accounting system (proof of concept of a business idea)
+- [dcp](https://github.com/tom-james-watson/dat-cp) - remote file copy cli tool with an API reminiscent of scp/rsync
 
 ## Using Dat
 
@@ -144,12 +145,12 @@ Utilities used in our command line interface
 - [utp-native](https://github.com/mafintosh/utp-native) - utp protocol implementation, based on `libutp` native bindings
 - [signalhub](https://github.com/mafintosh/signalhub) - simple signalling server that can be used to coordinate handshaking with webrtc
 
-### Storage 
+### Storage
 
 - [dat-storage](https://github.com/datproject/dat-storage) - Dat specific storage provider for Hyperdrive
 - [dat-secret-storage](https://github.com/datproject/dat-secret-storage) - hyperdrive storage module for dat secret keys
 
-#### Random Access 
+#### Random Access
 
 Dat relies on random access storage. Any of these modules can be used to provide the storage for a dat archive.
 
