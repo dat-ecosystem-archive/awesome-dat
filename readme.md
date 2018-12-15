@@ -97,6 +97,9 @@ Utilities to show information about an existing dat archive.
 - [hyperhealth](https://github.com/karissa/hyperhealth) - monitor health of hyperdrive or dat archives, e.g. peer count and peer mirror %
 - [hyperdrive-network-speed](https://github.com/joehand/hyperdrive-network-speed) - track upload and download speeds on hyperdrive archives
 - [dat-shell](https://github.com/millette/dat-shell) - Open a remote dat and explore with cd, ls, cp, (pseudo)ln, etc.
+- [dat-walk](https://github.com/brechtcs/dat-walk) - Recursive directory walker for dat archives
+- [dat-glob](https://github.com/brechtcs/dat-glob) - Glob implementation for dat archives
+- [dat-rm](https://github.com/brechtcs/dat-rm) - Rimraf equivalent for dat archives
 
 ### File Imports & Exports
 
