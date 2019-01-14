@@ -33,6 +33,7 @@ Projects built using Dat to share and transfer data. Open a PR to add your proje
 - [Dat Installer](https://github.com/staltz/dat-installer) - Android mobile app to distribute APK updates
 - [hypercore-accounting](https://github.com/aks-/hypercore-accounting) - a very basic double entry accounting system (proof of concept of a business idea)
 - [dcp](https://github.com/tom-james-watson/dat-cp) - remote file copy cli tool with an API reminiscent of scp/rsync
+- [dillo-dat](https://dillo-dat.hashbase.io/) - Dillo web browser plugin for Dat protocol
 
 ## Using Dat
 
