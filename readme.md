@@ -1,16 +1,16 @@
 # Dat awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[<img src="http://datproject.github.io/design/downloads/dat-data-logo.png" align="right" width="140">](https://datproject.org)
+[<img src="http://datproject.github.io/design/downloads/dat-logo.png" align="right" width="140">](https://dat.foundation)
 
-> A curated list of the [Dat Project](https://datproject.org) ecosystem.
+> A curated list of the [Dat Project](https://dat.foundation) ecosystem.
 
 *Please read the [contribution guidelines](contributing.md) before contributing.*
 
 Want to learn more? Check out:
 
-* [docs.datproject.org](https://docs.datproject.org/)
-* [dat whitepaper](https://datproject.org/paper)
-* [chat.datproject.org](http://chat.datproject.org/)
+* [docs.datproject.org](https://docs.datproject.org)
+* [dat whitepaper](https://dat.foundation/paper)
+* [chat.datproject.org](http://chat.datproject.org)
 
 ## Dat Applications
 
@@ -95,7 +95,7 @@ Utilities to show information about an existing dat archive.
 
 - [dat-log](https://github.com/joehand/dat-log) - simple cli that lists the history of a dat archive
 - [dat-ls](https://github.com/mafintosh/dat-ls) - simple cli that lists all the changes in a dat archive
-- [hyperhealth](https://github.com/karissa/hyperhealth) - monitor health of hyperdrive or dat archives, e.g. peer count and peer mirror %
+- [hyperhealth](https://github.com/okdistribute/hyperhealth) - monitor health of hyperdrive or dat archives, e.g. peer count and peer mirror %
 - [hyperdrive-network-speed](https://github.com/joehand/hyperdrive-network-speed) - track upload and download speeds on hyperdrive archives
 - [dat-shell](https://github.com/millette/dat-shell) - Open a remote dat and explore with cd, ls, cp, (pseudo)ln, etc.
 - [dat-walk](https://github.com/brechtcs/dat-walk) - Recursive directory walker for dat archives
@@ -135,7 +135,7 @@ Utilities used in our command line interface
 
 ### Networking
 
-- [hyperdiscovery](https://github.com/karissa/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses `discovery-swarm`
+- [hyperdiscovery](https://github.com/datproject/hyperdiscovery) - join the p2p swarm for hypercore feeds, uses `discovery-swarm`
 - [discovery-swarm](https://github.com/mafintosh/discovery-swarm) - discover and connect to peers, uses `discovery-channel`
 - [webrtc-swarm](https://github.com/mafintosh/webrtc-swarm) - create a swarm of p2p connections using webrtc and a signalhub
 - [dat-swarm-defaults](https://github.com/joehand/dat-swarm-defaults) - default configuration for dns and dht for use with `discovery-swarm`
@@ -212,9 +212,9 @@ If you want to update one of these, we are happy to help you choose one dependin
 - [jawn](https://github.com/CfABrigadePhiladelphia/jawn) - distributed version control for tabular data, based on `hypercore`
 - [dat-archiver](https://github.com/maxogden/dat-archiver) - archiver peer that backs up dat archives, based on `hypercore-archiver`
 - [hyperdrive-stats](https://github.com/juliangruber/hyperdrive-stats) - live and persistent statistics tracker for hyperdrive archives
-- [hyperdrive-stats-server](https://github.com/karissa/hypercore-stats-server) - server for sending hypercore / hyperdrive stats over server-side events
+- [hyperdrive-stats-server](https://github.com/okdistribute/hypercore-stats-server) - server for sending hypercore / hyperdrive stats over server-side events
 - [hyperdrive-stats-ui](https://github.com/mafintosh/hypercore-stats-ui) - html-based user interface to `hypercore-stats-server`
-- [zip-to-hyperdrive](https://github.com/karissa/zip-to-hyperdrive) - import contents of a zip archive into a hyperdrive archive
+- [zip-to-hyperdrive](https://github.com/okdistribute/zip-to-hyperdrive) - import contents of a zip archive into a hyperdrive archive
 - [url-dat](https://github.com/joehand/url-dat) - import files from http url's into a hyperdrive archive, uses `tar-dat`
 - [tar-dat](https://github.com/joehand/tar-dat) - stream tar files into a hyperdrive archive
 - [hyperdrive-duplicate](https://github.com/joehand/hyperdrive-duplicate) - check if a file is a duplicate to a hyperdrive archive entry
