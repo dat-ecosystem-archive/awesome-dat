@@ -74,6 +74,7 @@ Dat project runs a registry at datproject.org. We use these tools to manage our 
 - [multidrive](https://github.com/datproject/multidrive) - manage multiple hyperdrive archives located anywhere on the filesystem
 - [dat-pki](https://github.com/jayrbolton/dat-pki) - A public key infrastructure with many encryption utilities for Dat filesharing
 - [webdb](https://github.com/beakerbrowser/webdb) - decentralized table/records-based database with sql-like behaviour, uses `node-dat-archive`
+- [assassin](https://github.com/genderev/assassin) - Blazing fast, easy to use NoSQL database designed for [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) and built with `hyperdrive`. 
 
 #### Http Hosting
 
