@@ -15,8 +15,8 @@ More info on active projects and modules at [dat-ecosystem.org](https://dat-ecos
 Want to learn more? Check out:
 
 * [docs.datproject.org](https://docs.datproject.org/)
-* [dat whitepaper](https://datproject.org/paper)
-* [chat.datproject.org](http://chat.datproject.org/)
+* [dat whitepaper](https://github.com/dat-ecosystem-archive/whitepaper)
+* [chat.datproject.org](https://gitter.im/datproject/discussions)
 
 ## Dat Applications
 
